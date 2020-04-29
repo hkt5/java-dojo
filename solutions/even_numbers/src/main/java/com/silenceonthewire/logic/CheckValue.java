@@ -9,7 +9,7 @@ public class CheckValue implements NumberDecidable {
     private DecisionDictionary decisionDictionary = new DecisionDictionary();
 
     @Override
-    public String decision(int number) {
+    public String getNumberType(int number) {
 
         String decision = null;
 

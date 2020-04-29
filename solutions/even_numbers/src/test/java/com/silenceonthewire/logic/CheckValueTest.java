@@ -13,24 +13,24 @@ class CheckValueTest {
     @Test
     public void testEvenAndPositiveNumber() {
 
-        assertEquals(this.decisionDictionary.isEvenAndPositive, this.checkValue.decision(2));
+        assertEquals(this.decisionDictionary.isEvenAndPositive, this.checkValue.getNumberType(2));
     }
 
     @Test
     public void testEvenAndNegativeNumber() {
 
-        assertEquals(this.decisionDictionary.isEvenAndNegative, this.checkValue.decision(-2));
+        assertEquals(this.decisionDictionary.isEvenAndNegative, this.checkValue.getNumberType(-2));
     }
 
     @Test
     public void testNotEvenAndPositiveNumber() {
 
-        assertEquals(this.decisionDictionary.isNotEvenAndPositive, this.checkValue.decision(1));
+        assertEquals(this.decisionDictionary.isNotEvenAndPositive, this.checkValue.getNumberType(1));
     }
 
     @Test
     public void testNotEvenAndNegativeNumber() {
 
-        assertEquals(this.decisionDictionary.isNotEvenAndNegative, this.checkValue.decision(-1));
+        assertEquals(this.decisionDictionary.isNotEvenAndNegative, this.checkValue.getNumberType(-1));
     }
 }

@@ -21,7 +21,7 @@ public class Runner implements Runable, NumberDecidable, GetableNumber, Prinatbl
         try {
             this.print();
             int value = this.getNumber();
-            System.out.println(this.decision(value) + "\n");
+            System.out.println(this.getNumberType(value) + "\n");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -29,9 +29,9 @@ public class Runner implements Runable, NumberDecidable, GetableNumber, Prinatbl
     }
 
     @Override
-    public String decision(int number) {
+    public String getNumberType(int number) {
 
-        return checkValue.decision(number);
+        return checkValue.getNumberType(number);
     }
 
     @Override
